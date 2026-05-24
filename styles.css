@@ -1,0 +1,167 @@
+:root {
+    /* Cores */
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+
+    /* font family */
+    --fraunces: "Fraunces";
+    --montserrat: "Montserrat";
+}
+
+
+body {
+    background-color: var(--cream);
+}
+
+.card-container {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 15% auto;
+
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    img {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+}
+
+.img-desktop {
+    display: none;
+}
+
+.text-container {
+    padding: 2rem;
+
+    .text-preset-4 {
+        margin-top: 0;
+        color: var(--grey);
+    }
+
+    .text-preset-3 {
+        color: var(--grey);
+    }
+
+    p:has(span) {
+        color: var(--green-500);
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-container button {
+        width: 100%;
+        background-color: var(--green-500);
+        color: var(--white);
+        padding: 1rem;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .button-container button::before {
+        content: url(images/icon-cart.svg);
+        display: inline-block;
+    }
+
+}
+
+
+/* Predefinições de textos */
+.text-preset-1 {
+    font-family: var(--fraunces);
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.text-preset-2 {
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 110%;
+    letter-spacing: 0px;
+}
+
+.text-preset-3 {
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 160%;
+    letter-spacing: 0px;
+}
+
+.text-preset-4 {
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 120%;
+    letter-spacing: 5px;
+}
+
+.text-preset-5 {
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 0.813rem;
+    line-height: 120%;
+    letter-spacing: 0px;
+    color: var(--grey);
+}
+
+
+/* Footer */
+.attribution {
+    font-size: 0.6875rem; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Responsividade 768px (tablet) */
+
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+        max-width: 60%;
+        border-top-right-radius: 8px;
+
+        img {
+            max-width: 50%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 8px;
+        }
+
+        .img-mobile {
+            display: none;
+        }
+        .img-desktop {
+            display: block;
+        }
+    }
+}
+
+/* Responsividade 1080p (desktop) */
+
+@media (min-width: 1080px) {
+    .card-container {
+        max-width: 50%;
+    }
+}
+
+/* Responsividade 1440p (wide-screen) */
+
+@media (min-width: 1440px) {
+    .card-container {
+        max-width: 40%;
+    }
+}
