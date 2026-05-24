@@ -71,6 +71,10 @@ body {
         display: inline-block;
     }
 
+    .button-container button:hover {
+        background-color: var(--green-700);
+    }
+
 }
 
 
