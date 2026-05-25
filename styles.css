@@ -39,13 +39,17 @@ body {
 .text-container {
     padding: 2rem;
 
+    .text-preset-3 {
+        color: var(--grey);
+    }
+
     .text-preset-4 {
         margin-top: 0;
         color: var(--grey);
     }
 
-    .text-preset-3 {
-        color: var(--grey);
+    .text-preset-5 {
+        padding-left: 15px;
     }
 
     p:has(span) {
@@ -69,6 +73,7 @@ body {
     .button-container button::before {
         content: url(images/icon-cart.svg);
         display: inline-block;
+        padding-right: 10px;
     }
 
     .button-container button:hover {
@@ -78,7 +83,7 @@ body {
 }
 
 
-/* Predefinições de textos */
+/* Text presets from Figma */
 .text-preset-1 {
     font-family: var(--fraunces);
     font-weight: 700;
