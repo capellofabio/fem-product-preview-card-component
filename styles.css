@@ -1,5 +1,5 @@
 :root {
-    /* Cores */
+    /* Colors */
     --black: hsl(212, 21%, 14%);
     --grey: hsl(228, 12%, 48%);
     --cream: hsl(30, 38%, 92%);
@@ -130,7 +130,7 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
-/* Responsividade 768px (tablet) */
+/* Responsivity 768px (tablet) */
 
 @media (min-width: 768px) {
     .card-container {
@@ -154,7 +154,7 @@ body {
     }
 }
 
-/* Responsividade 1080p (desktop) */
+/* Responsivity 1080p (desktop) */
 
 @media (min-width: 1080px) {
     .card-container {
@@ -162,7 +162,7 @@ body {
     }
 }
 
-/* Responsividade 1440p (wide-screen) */
+/* Responsivity 1440p (wide-screen) */
 
 @media (min-width: 1440px) {
     .card-container {
