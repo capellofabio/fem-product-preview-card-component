@@ -11,7 +11,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 - Solution URL: (https://github.com/capellofabio/fem-product-preview-card-component)
